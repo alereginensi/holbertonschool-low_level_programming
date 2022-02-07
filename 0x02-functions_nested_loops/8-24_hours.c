@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - jdsjsdj
+ * void jack_bauer(void) - jdsjsdj
  *
  * @min: sdjsadka
  * @hor: jdajsd
