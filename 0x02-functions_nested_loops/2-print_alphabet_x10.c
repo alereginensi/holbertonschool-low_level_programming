@@ -6,7 +6,9 @@
  *     *
  *      * Return: Always 0 (Sucess)
  *       **/
-int main(void)
+
+void print_alphabet_x10(void)
+
 {
 	char letter;
 	int a = 0;
@@ -20,5 +22,4 @@ int main(void)
 			letter++;
 		}
 	}
-	return(0);
 }
