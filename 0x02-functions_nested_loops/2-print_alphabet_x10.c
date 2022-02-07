@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - aaaaa
+ * print_alphabet_x10 - aaaaa
  *
  * Description: Same as above
  *
