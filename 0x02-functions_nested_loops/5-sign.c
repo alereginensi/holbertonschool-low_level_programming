@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_sign - jdsjsdj
+ * print_sign - jdsjsdj
  *
  * @n: sdjsadka
  *
