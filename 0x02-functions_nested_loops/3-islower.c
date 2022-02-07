@@ -1,24 +1,21 @@
 #include "main.h"
 /**
- *  * main - aaaaa
+ *  * int _islower(int c) - aaaaa
  *   *
  *    * Description: Same as above
  *     *
  *      * Return: Always 0 (Sucess)
  *       **/
-int main(void)
+int _islower(int letter)
 {
-	char letter;
-	int a = 0;
 
-	for (a = 0; a <= 9; a++)
+	if (letter >= 'a' && letter <= 'z')
 	{
-		letter = 'a';
-        	while (letter <= 'z')
-		{	
-			_putchar(letter);
-			letter++;
-		}
+		return (1);
 	}
-	return(0);
+	else
+	{
+		return (0);
+	}
 }
+
