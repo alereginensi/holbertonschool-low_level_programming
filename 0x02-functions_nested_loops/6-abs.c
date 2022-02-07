@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _abs(int) - jdsjsdj
+ * int _abs - jdsjsdj
  *
  * @n: sdjsadka
  *
