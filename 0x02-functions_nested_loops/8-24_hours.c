@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * void jack_bauer(void) - jdsjsdj
+ * jack_bauer - jdsjsdj
  *
- * @min: sdjsadka
- * @hor: jdajsd
+ * 
  *
  * Return: Always 0 (Sucess)
  **/
