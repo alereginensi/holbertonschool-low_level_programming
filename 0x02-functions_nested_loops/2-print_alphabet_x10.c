@@ -1,25 +1,22 @@
 #include "main.h"
+
 /**
- *  * main - aaaaa
- *   *
- *    * Description: Same as above
- *     *
- *      * Return: Always 0 (Sucess)
- *       **/
+ * main - aaaaa
+ *
+ * Description: Same as above
+ *
+ * Return: Always 0 (Sucess)
+ **/
 
 void print_alphabet_x10(void)
-
 {
-	char letter;
-	int a = 0;
+	int i = 0;
+	char letra;
 
-	for (a = 0; a <= 9; a++)
+	while (i++ <= 9)
 	{
-		letter = 'a';
-        	while (letter <= 'z')
-		{	
-			_putchar(letter);
-			letter++;
-		}
+		for (letra = 'a'; letra <= 'z'; letra++)
+		_putchar(letra);
+		_putchar('\n');
 	}
 }
