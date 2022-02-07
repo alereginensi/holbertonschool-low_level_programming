@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * int _islower(int letter) - aaaaa
+ * _islower - jdsjsdj
  *
- * Description: @letter: sdjsadka
+ * @letter: sdjsadka
  *
  * Return: Always 0 (Sucess)
  **/
