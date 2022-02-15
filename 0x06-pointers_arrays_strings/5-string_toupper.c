@@ -2,23 +2,25 @@
 #include <stdio.h>
 
 /**
- * reverse_array - function that concatenates two strings
- * @a: variable
- * @n: variable
- *
+ * string_toupper - changes all lowercase letters of a string to uppercase.
+ * @s: pointer
  * Return: Always 0.
  */
-void reverse_array(int *a, int n)
+
+char *string_toupper(char *s)
 {
-
 	int i = 0;
-	int temp;
 
-	while (i < n--)
+
+	while (s[i] != '\0')
 	{
-		temp = a[i];
-		a[i] = a[n];
-		a[n] = temp;
-		i++;
+		if (s[i] >= 'a' && s[i] <= 'z')
+		{
+			s[i] = s[i] - 32;
+		}
+
+	i++;
+
 	}
+	return (s);
 }
