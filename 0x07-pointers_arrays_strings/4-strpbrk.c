@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _strspn - fills memory with a constant byte.
+* _strpbrk - fills memory with a constant byte.
 * @s: the address of memory to print
 * @accept: the size of the memory to print
 *
@@ -23,7 +23,7 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (*s == *accept)
 		{
-			return(s);
+			return (s);
 		}
 	}
 	return ('\0');
