@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+* print_diagsums - fills memory with a constant byte.
+* @a: the address of memory to print
+* @size: variable
+* Return: Nothing.
+*/
+void print_diagsums(int *a, int size)
+{
+	int n;
+	int i;
+
+	for (n = 0; n < 8; n++)
+	{
+		for (i = 0; i < 8; i++)
+		{
+		
+	}
+}
