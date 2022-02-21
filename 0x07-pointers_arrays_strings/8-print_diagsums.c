@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - sum of diags
- * @a: array
- * @size: size
- * Return: always 0.
+ * print_diagsums - diags
+ * @a: variable
+ * @size: variable
+ * Return: Nothing.
  **/
 void print_diagsums(int *a, int size)
 {
