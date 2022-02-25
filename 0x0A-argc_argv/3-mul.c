@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 		int j = atoi(argv[2]);
 
 		int x = (i * j);
+
 		printf("%d\n", x);
 		break;
 	}
