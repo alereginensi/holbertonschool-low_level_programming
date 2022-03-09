@@ -37,7 +37,7 @@ int op_mul(int a, int b);
 	return (a * b);
 }
 /**
- * op_mul - mul
+ * op_div - div
  * @a: a
  * @b: b
  * Return: operation
