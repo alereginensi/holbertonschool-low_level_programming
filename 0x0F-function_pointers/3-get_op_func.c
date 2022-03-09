@@ -1,6 +1,4 @@
-#ifndef _3_GET_OP_FUNC_C_
-#define _3_GET_OP_FUNC_C_
-
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -9,7 +7,7 @@
  * Return: operation
  */
 
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 	{"+", op_add},
@@ -23,12 +21,11 @@ int (*get_op_func(char *s))(int, int);
 
 	while (i < 5)
 	{
-		if (ops[i] == s)
+		if (ops[i].op == s)
 		{
 			return (ops[i].f);
 		}
+		i++;
 	}
-	return (NULL);
+	return (0);
 }
-
-#endif

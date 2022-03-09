@@ -1,6 +1,4 @@
-#ifndef _3_OP_FUNCTIONS_C_
-#define _3_OP_FUNCTIONS_C_
-
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -10,7 +8,7 @@
  * Return: operation
  *
  */
-int op_add(int a, int b);
+int op_add(int a, int b)
 {
 	return (a + b);
 }
@@ -21,7 +19,7 @@ int op_add(int a, int b);
  * Return: operation
  *
  */
-int op_sub(int a, int b);
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
@@ -32,7 +30,7 @@ int op_sub(int a, int b);
  * Return: operation
  *
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
@@ -69,6 +67,5 @@ int op_mod(int a, int b)
 	return (a % b);
 }
 
-#endif
 
 
