@@ -1,8 +1,15 @@
 #include "function_pointers.h"
-
+/**
+ * array_iterator - array
+ * @size: size
+ * @array: array
+ * @action: action
+ */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	for (size = 0; array[size] != '\0'; size--)
+	size_t x = 0;
+
+	for (x = 0; x < size; x++)
 	{
 		action(*array);
 		array++;
