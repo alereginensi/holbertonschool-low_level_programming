@@ -17,14 +17,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = (va_arg(strings, char *));
 		printf("%s", str);
-
+	
+	if (str == NULL)
+	{
+		printf("(nil)");
+	}	
 	if (separator != NULL && count != (n - 1))
 	{
 		printf("%s", separator);
-	}
-	if (strings == NULL)
-	{
-		printf("(nil)");
 	}
 	}
 	va_end(strings);
