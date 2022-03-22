@@ -13,7 +13,8 @@ void free_listint2(listint_t **head)
 		{
 			printf("(nil)");
 		}
-		else
+
+		while (*head != NULL)
 		{
 			x = *head;
 			*head = (*head)->next;
