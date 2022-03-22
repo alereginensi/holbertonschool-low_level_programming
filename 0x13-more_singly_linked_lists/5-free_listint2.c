@@ -9,8 +9,6 @@ void free_listint2(listint_t **head)
 {
 	listint_t *x;
 
-	while (*head != NULL)
-	{
 		if (*head == NULL)
 		{
 			printf("(nil)");
@@ -21,5 +19,4 @@ void free_listint2(listint_t **head)
 			*head = (*head)->next;
 			free(x);
 		}
-	}
 }
