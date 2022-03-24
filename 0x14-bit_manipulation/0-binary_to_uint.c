@@ -30,12 +30,12 @@ unsigned int binary_to_uint(const char *b)
 	int c;
 	int len;
 
-	len = _strlen(b);
-
 	if (b == NULL)
 	{
 		return (0);
 	}
+
+	len = _strlen(b);
 
 	for (c = len - 1; c >= 0; c--)
 	{
