@@ -25,10 +25,10 @@ int _strlen(const char *s)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int k = 1;
-	unsigned int i = 0;
+	int k = 1;
+	int i = 0;
 	int c;
-	unsigned int len;
+	int len;
 
 	len = _strlen(b);
 
