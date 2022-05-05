@@ -7,16 +7,16 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	unsigned int count = 0;
+	size_t n = 0;
 
 	while (h != NULL)
-{
+	{
 		if (h->n != '\0')
 		{
-		printf("%u\n", h->n);
-		h = h->next;
+			printf("%u\n", h->n);
+			h = h->next;
 		}
-		count++;
+		n++;
 	}
-	return (count);
+	return (n);
 }
