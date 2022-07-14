@@ -1,4 +1,4 @@
-#include "main.h"
+#include "m.h"
 
 /**
  * main - main function
@@ -9,3 +9,4 @@ int main(void)
 	school_function();
 	return (EXIT_SUCCESS);
 }
+/* School */

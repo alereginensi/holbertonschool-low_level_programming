@@ -1,4 +1,4 @@
-#include "main.h"
+#include "m.h"
 
 /**
  * school_function - prints school logo
