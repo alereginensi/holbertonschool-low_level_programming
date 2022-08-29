@@ -1,4 +1,4 @@
-# (220) 0x09. C - Static libraries
+# (221) 0x0A. C - argc, argv
 Foundations > Low-level programming & Algorithm > Hatching out
 
 ---
@@ -7,59 +7,64 @@ Foundations > Low-level programming & Algorithm > Hatching out
 Julien Barbier
 
 ### Description
-Introduction to static libraries, use of `ar`, `ranlib`, `nm`.
+Introduction to the argument count and argument vector to `main` in C.
 
 ### Requirements
 
 ### Provided file(s)
+* [`_putchar.c`](./_putchar.c) originally [here](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
 
 ---
 
 ## Mandatory Tasks
 
-### :white_check_mark: 0. A library is not a luxury but one of the necessities of life
-Create the static library `libmy.a` containing all the functions listed below:
+### :white_check_mark: 0. It ain't what they call you, it's what you answer to
+Write a program that prints its name, followed by a new line.
 
-```
-int _putchar(char c);
-int _islower(int c);
-int _isalpha(int c);
-int _abs(int n);
-int _isupper(int c);
-int _isdigit(int c);
-int _strlen(char *s);
-void _puts(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-char *_memset(char *s, char b, unsigned int n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
-```
+* If you rename the program, it will print the new name, without having to compile it again
+* You should not remove the path before the name of the program
 
-File(s): [`libmy.a`](./libmy.a)\
-Compiled: `gcc -std=gnu89 main.c -L. -lmy -o quote`
+File(s): [`0-whatsmyname.c`](./0-whatsmyname.c)\
+Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-whatsmyname.c -o mynameis`
 
-### :white_check_mark: 1. Without libraries what have we? We have no past and no future
-Create a script called `create_static_lib.sh` that creates a static library called `liball.a` from all the `.c` files that are in the current directory.
+### :white_check_mark: 1. Silence is argument carried out by other means
+Write a program that prints the number of arguments passed into it.
 
-File(s): [`create_static_lib.sh`](./create_static_lib.sh)\
+* Your program should print a number, followed by a new line
 
-### :white_check_mark: 2. Either write something worth reading or do something worth writing
-Write a blog post on C static libraries. It should cover:
+File(s): [`1-args.c`](./1-args.c)\
+Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-args.c -o nargs`
 
-* Why use libraries
-* How they work
-* How to create them
-* How to use them
+### :white_check_mark: 2. The best argument against democracy is a five-minute conversation with the average voter
+Write a program that prints all arguments it receives.
+
+* All arguments should be printed, including the first one
+* Only print one argument per line, ending with a new line
+
+File(s): [`2-args.c`](./2-args.c)\
+Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-args.c -o args`
+
+### :white_check_mark: 3. Neither irony nor sarcasm is argument
+Write a program that multiplies two numbers.
+
+* Your program should print the result of the multiplication, followed by a new line
+* You can assume that the two numbers and result of the multiplication can be stored in an integer
+* If the program does not receive two arguments, your program should print `Error`, followed by a new line, and return 1
+
+File(s): [`3-mul.c`](./3-mul.c)\
+Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-mul.c -o mul`
+
+### :white_check_mark: 4. To infinity and beyond
+Write a program that adds positive numbers.
+
+* Print the result, followed by a new line
+* If no number is passed to the program, print 0, followed by a new line
+* If one of the number contains symbols that are not digits, print `Error`, followed by a new line, and return 1
+* You can assume that numbers and the addition of all the numbers can be stored in an `int`
+
+File(s): [`4-add.c`](./4-add.c)\
+Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-add.c -o add`
 
 ---
-
 ## Student
 * **Alejandro Reginensi** - [alereginensi](github.com/alereginensi)
