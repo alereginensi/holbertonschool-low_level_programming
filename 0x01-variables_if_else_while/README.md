@@ -137,4 +137,4 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-pr
 ---
 
 ## Student
-* **Samuel Pomeroy** - [alereginensi](github.com/alereginensi)
+* **Alejandro Reginensi** - [alereginensi](github.com/alereginensi)
